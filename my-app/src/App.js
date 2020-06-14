@@ -7,8 +7,8 @@ function App() {
     <div className="App">
       <header className="App-header">
        
-        <li>Chess</li>
-        <li>Checkers</li>
+        <p><a href="lichess.org">Chess</a></p>
+        <p><a href="https://www.247checkers.com/">Chechers</a></p>
         
         
       </header>
