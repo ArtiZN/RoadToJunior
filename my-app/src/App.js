@@ -7,8 +7,15 @@ function App() {
     <div className="App">
       <header className="App-header">
        
-        <p><a href="lichess.org">Chess</a></p>
-        <p><a href="https://www.247checkers.com/">Chechers</a></p>
+        
+          <iframe src="https://www.google.com/"></iframe>
+        
+
+        <p>
+          <iframe src="https://www.247checkers.com/">
+            Говнокод на месте?
+          </iframe>
+        </p>
         
         
       </header>
