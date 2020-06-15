@@ -17,3 +17,10 @@ code {
   width: 800px;
   margin: 0 auto;
 }
+
+.rm{
+  background: red;
+  border-radius: 50%;
+  color: white;
+  border: none;
+}
