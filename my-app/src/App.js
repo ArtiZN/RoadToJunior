@@ -5,9 +5,9 @@ import TodoList from './Todo/TodoList';
 
 function App() {
   const [todos, setTodos] = React.useState([
-    {id: 1, completed: false, title: "buy"},
-    {id: 2, completed: true, title: "sell"},
-    {id: 3, completed: false, title: "resell"}
+    {id: 1, completed: false, title: "Stick your finger in my ass"},
+    {id: 2, completed: true, title: "Suck some dick"},
+    {id: 3, completed: false, title: "Your dad gave you a good advice"}
   ])
   
   function toggleTodo(id) {
