@@ -1,6 +1,7 @@
 import React from 'react';
 import TodoList from './Todo/TodoList';
 import Context from './Context'
+import AddTodo from './Todo/AddTodo';
 
 
 
@@ -30,10 +31,10 @@ function App() {
         <h1>
         Todo List
         </h1>
-        <TodoList 
-          todos = {todos}
-          onToggle = {toggleTodo}
-        />
+        <AddTodo/>
+        
+        {todos.length ? <TodoList todos = {todos} onToggle = {toggleTodo} /> : <p className="beautiful">Nothing to do</p>}
+        
 
     
      </div>
