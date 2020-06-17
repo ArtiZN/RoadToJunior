@@ -11,6 +11,9 @@ function App() {
     {id: 2, completed: true, title: "Suck some dick"},
     {id: 3, completed: false, title: "Your dad gave you a good advice"}
   ])
+
+  //let numbers = React.u
+
   
   function toggleTodo(id) {
     setTodos(todos.map (todo => {
@@ -26,8 +29,10 @@ function App() {
   }
 
   function addTodo(title) {
+
     setTodos(todos.concat([
       {
+        
         title,
         id: Date.now(),
         completed: false
@@ -41,7 +46,7 @@ function App() {
         <h1>
         Todo List
         </h1>
-        <AddTodo onCreate={addTodo}/>
+        <AddTodo onCreate={addTodo} />
         
         {todos.length ? <TodoList todos = {todos} onToggle = {toggleTodo} /> : <p className="beautiful">Nothing to do</p>}
         

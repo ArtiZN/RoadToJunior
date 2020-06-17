@@ -1,16 +1,17 @@
 import React, {useState} from 'react'
 import PropTypes from 'prop-types'
 
-function AddTodo (onCreate) {
+function AddTodo (props) {
 
     const [value, setValue] = useState('');
 
     function submitHandler (event){
         event.preventDefault() //to keep page not reloading
-
+        console.log()
         if (value.trim()){
-            onCreate(value)
-        }
+            props.onCreate(value)
+            setValue('')
+        }    
     }
 
     return (
@@ -25,7 +26,7 @@ function AddTodo (onCreate) {
 }
 
 AddTodo.propTypes = {
-    onCreate: PropTypes.func.isRequired
+    onCreate: PropTypes.func
 }
 
 
